@@ -1,0 +1,68 @@
+@keyframes gradasiBg {
+    0%{
+        background-position: right;
+    }
+    100%{
+        background-position: left;
+    }
+    
+}
+
+
+
+
+body{
+    background-image: linear-gradient(to left, #388697, #50a4ac, #6ec2bf, #8fe1d0, #b5ffe1);
+    background-size: 450%;
+    margin: 0;
+    padding: 0;
+    animation: gradasiBg 10s infinite alternate-reverse;
+}
+
+
+.container{
+    background-color: #CBC5EA;
+}
+
+
+.container nav ul{
+    display: inline-block;
+}
+.container nav ul li{
+    display: inline-block;
+}
+
+.container nav ul li a{
+    text-decoration: none;
+    
+}
+
+header{
+    float: left;
+    margin-left: 20px;
+}
+
+main{
+    clear: both;
+}
+
+header, nav{
+    background-color: #08415C;
+}
+
+nav{
+    height: 69px;
+    
+}
+
+nav ul{
+    margin-top: 25px;
+}
+
+nav ul:nth-child(1){
+    float: left;
+}
+nav ul:nth-child(2){
+    float: right;
+    margin-right: 20px;
+}

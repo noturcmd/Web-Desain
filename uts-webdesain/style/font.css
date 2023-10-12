@@ -1,0 +1,21 @@
+:root{
+    --color: darkblue;
+}
+
+
+
+
+
+body {
+    font-family: 'Gabarito', cursive;
+    /* font-family: 'Inter', sans-serif; */
+}
+
+h2 span:nth-child(1), h2 span:nth-child(3){
+    text-shadow: 2px 2px purple;
+    color: crimson;
+}
+
+h2 span:nth-child(2){
+    color: purple;
+}

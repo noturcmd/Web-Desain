@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5</title>
+    <style>
+        table{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        input[type="text"]:focus, input[type="number"]:focus{
+            background-color: plum;
+        }
+        
+        textarea{
+            resize: none;
+        }
+
+        input[type="email"]:valid{
+            background-color:purple;
+        }
+    </style>
+</head>
+<body bgcolor="darkblue">
+    <div class="form-input" style="width: 850px;margin: auto;">
+        <form style="width: 800px;" method="post">
+        <img src="logouns.png" alt="Logo UNS" width="120px" style="float: left;margin-left: 50px;">
+        <pre style="font-size: 30px;font-weight: bolder;color:blueviolet">
+
+    Pendaftaran Anggota 
+    Perpustakaan Online</pre>
+        <br>
+        <fieldset style="border-color: coral;color: lightcyan;">
+            <legend>Identitas</legend>
+            <br>
+            <table>
+                <tr>
+                    <td><label for="no-anggota">Nama Anggota</label></td>
+                    <td colspan="2"><input type="text" name="no-anggota" id="no-anggota" style="width: 440px;" placeholder="Masukkan nama Anda"></td>
+                </tr>
+                <tr>
+                    <td width="250"><label for="no-anggota">No Anggota</label></td>
+                    <td colspan="2"><input type="text" name="no-anggota" id="no-anggota" style="width: 300px;" placeholder="No Anggota" required></td>
+                </tr>
+                <tr>
+                    <td><label for="akun-email">Email</label></td>
+                    <td colspan="2"><input type="email" name="akun-email" id="akun-email" style="width: 300px;" required placeholder="email"></td>
+                    <!--Jika alamat valid maka akan akan berwarna ungu  -->
+                </tr>
+                <tr>
+                    <td><label for="fakultas">Fakultas</label></td>
+                    <td colspan="2">
+                        <select name="opsi-fakultas" id="fakultas" style="width: 447px;" required>
+                            <option>FH</option>
+                            <option>FK</option>
+                            <option>FKIP</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tanggal-lahir">Tanggal Lahir</label></td>
+                    <td><input type="date" name="no-anggota" id="no-anggota" style="width: 193px;"></td>
+                </tr>
+                <tr>
+                    <td><label for="opsi-tipe-anggota">Tipe Anggota</label></td>
+                    <td colspan="2">
+                        <select name="opsi-tipe-anggota" id="opsi-tipe-anggota" style="width: 200px;">
+                            <option>Rajin</option>
+                            <option>Malas</option>
+                            <option>Tengah</option>
+                            <option>Awokwokao</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="opsi-jenis-kelamin">Jenis Kelamin</label></td>
+                    <td><input type="radio" name="jenis-kelamin"><label for="pria">Pria</label> <input type="radio" name="jenis-kelamin"><label for="wanita">Wanita</label></td>
+                </tr>
+                <tr>
+                    <td valign="top"><label for="alamat">Alamat Lengkap</label></td>
+                    <td colspan="2"><textarea name="alamat" id="alamat" cols="60" rows="5"  placeholder="Masukkan alamat Anda"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="kode-pos">Kode Pos</label></td>
+                    <td colspan="2"><input type="number" name="kode-pos" id="kode-pos" style="width: 440px;" placeholder="Kode Pos Anda"></td>
+                </tr>
+                <tr>
+                    <td><label for="no-anggota">No HP</label></td>
+                    <td colspan="2"><input type="number" name="no-anggota" id="no-anggota" style="width: 440px;" placeholder="No HP Anda"></td>
+                </tr>
+            </table>
+            <br>
+            <div class="last-button" style="margin-left: 620px;">
+                <button type="submit" style="margin-right: 10px;">Kirim</button>
+                <button type="reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+    </div>
+</body>
+</html>
